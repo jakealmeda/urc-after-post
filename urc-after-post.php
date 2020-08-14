@@ -13,11 +13,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-add_action( 'genesis_entry_footer', 'urc_after_post_function' );
+add_action( 'genesis_after_loop', 'urc_after_post_function' );
 function urc_after_post_function() {
 
 	// show only if singular or archive pages
-	if( is_singular() || is_archive() ) {
+	if( is_singular('post') ) {
 
 		?>
 		<div class="adsense-matchedcontent">
