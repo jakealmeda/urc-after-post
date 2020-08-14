@@ -13,11 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
+<<<<<<< Updated upstream
 add_action( 'genesis_after_loop', 'urc_after_post_function' );
 function urc_after_post_function() {
 
 	// show only if singular or archive pages
 	if( is_singular('post') ) {
+=======
+add_action( 'genesis_after_entry', 'urc_after_post_function' );
+function urc_after_post_function() {
+
+	// show only if singular or archive pages
+	if( is_singular( 'post' ) || is_archive() ) {
+>>>>>>> Stashed changes
 
 		?>
 		<div class="adsense-matchedcontent">
@@ -55,5 +63,5 @@ function urc_after_post_function() {
 		<?php
 
 	}
-	
+
 }
