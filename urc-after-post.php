@@ -27,10 +27,6 @@ function urc_after_post_function() {
 		<?php echo do_shortcode( '[spk_google_suggested_articles_js][/spk_google_suggested_articles_js]' ); ?>
 		</div>
 
-		<h4 class="item-widgettitle"><a href="http://www.understandingrelationships.com/category/essential-fundamentals">ESSENTIAL FUNDAMENTALS</a></h4>
-		<div class="space-bottom clearfix"></div>
-		<?php echo do_shortcode( '[soliloquy id="23020"]' ); ?>
-
 		<div class="clearfix space-vertical"></div>
 		<div class="panel panel-ctacontent">
 		<div class="top">
