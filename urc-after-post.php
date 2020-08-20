@@ -27,12 +27,6 @@ function urc_after_post_function() {
 		<?php echo do_shortcode( '[spk_google_suggested_articles_js][/spk_google_suggested_articles_js]' ); ?>
 		</div>
 
-		<div class="adsense-matchedcontent">
-		<h4 class="item-widgettitle space-bottom space-top-double clearfix">RECOMMENDED PRODUCTS</h4>
-		<div class="space-bottom clearfix"></div>
-		<?php echo do_shortcode( '[spk_amazon_market_place][/spk_amazon_market_place]' ); ?>
-		</div>
-
 		<h4 class="item-widgettitle"><a href="http://www.understandingrelationships.com/category/essential-fundamentals">ESSENTIAL FUNDAMENTALS</a></h4>
 		<div class="space-bottom clearfix"></div>
 		<?php echo do_shortcode( '[soliloquy id="23020"]' ); ?>
