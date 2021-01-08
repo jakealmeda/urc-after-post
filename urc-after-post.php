@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: URC After Post
- * Description: Ads more details after each post entry
- * Version: 1.0
+ * Description: Ads more details after each post entry which includes the Suggested Articles.
+ * Version: 1.0.1
  * Author: Mark Corpuz
  * Author URI: http://smarterwebpackages.com/
  * Network: true
@@ -14,10 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-add_action( 'genesis_after_loop', 'urc_after_post_function' );
+/*add_action( 'genesis_after_loop', 'urc_after_post_function' );
 function urc_after_post_function() {
 
-	// show only if singular or archive pages
+	// show only if singular or arcahive pages
 	if( is_singular('post') ) {
 
 		?>
@@ -53,4 +53,23 @@ function urc_after_post_function() {
 
 	}
 
+}*/
+
+
+add_action( 'genesis_entry_footer', 'urc_suggested_articles_fn' );
+function urc_suggested_articles_fn() {
+
+	if( is_singular('post') ) {
+		?>
+		<h4 class="item-widgettitle space-bottom space-top-double clearfix">SUGGESTED ARTICLES</h4>
+		<div class="space-bottom clearfix"></div>
+		<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle" style="display: block;" data-ad-format="autorelaxed" data-ad-client="ca-pub-0947746501358966" data-ad-slot="2135583692"></ins>
+		<script><br />
+		     (adsbygoogle = window.adsbygoogle || []).push({});<br />
+		</script>
+		<?php
+	}
+	
 }
+
